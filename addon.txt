@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+        "name"              "ULXSayToTeam"
+        "version"           "1.0"
+        "author_name"       "The Realist"
+        "author_email"      ""
+        "info"              "Allows an admin to send a text message to members of one team."
+        "override"          "0"
+}
