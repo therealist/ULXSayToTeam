@@ -27,5 +27,5 @@ function ulx.saytoprops( calling_ply, message  )
 end
 local saytoprops = ulx.command( "Prop Hunt", "ulx saytoprops", ulx.saytoprops, "@p", true, true )
 saytoprops:addParam{ type=ULib.cmds.StringArg, hint="message", ULib.cmds.takeRestOfLine }
-saytoprops:defaultAccess( ULib.ACCESS_ALL )
+saytoprops:defaultAccess( ULib.ACCESS_ADMIN )
 saytoprops:help( "Send a message to all players on the Props team." )
