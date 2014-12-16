@@ -2,11 +2,11 @@ function ulx.saytohunters( calling_ply, message  )
 	
 	for k,v in pairs( player.GetAll() ) do
 		if team.GetName(v:Team()) == "Hunters" then
-			ULib.tsayColor( v, false, team.GetColor(1), "[HUNTERS]: " .. message )
+			ULib.tsayColor( v, false, team.GetColor(1), "[HUNTERS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(225,225,225), message )
 		else end
 	end
 	
-	ulx.fancyLogAdmin( calling_ply, "#A sent a message to the Hunters team: " .. message )
+	ULib.tsay( calling_ply, "You sent to Hunters: " .. message)
 	
 end
 local saytohunters = ulx.command( "Prop Hunt", "ulx saytohunters", ulx.saytohunters, "@h", true, true )
@@ -18,11 +18,11 @@ function ulx.saytoprops( calling_ply, message  )
 	
 	for k,v in pairs( player.GetAll() ) do
 		if team.GetName(v:Team()) == "Props" then
-			ULib.tsayColor( v, false, team.GetColor(2), "[PROPS]: " .. message )
+			ULib.tsayColor( v, false, team.GetColor(2), "[PROPS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(225,225,225), message )
 		else end
 	end
 	
-	ulx.fancyLogAdmin( calling_ply, "#A sent a message to the Props team: " .. message )
+	ULib.tsay( calling_ply, "You sent to Props: " .. message)
 	
 end
 local saytoprops = ulx.command( "Prop Hunt", "ulx saytoprops", ulx.saytoprops, "@p", true, true )
