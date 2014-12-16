@@ -2,7 +2,7 @@ function ulx.saytohunters( calling_ply, message  )
 	
 	for k,v in pairs( player.GetAll() ) do
 		if team.GetName(v:Team()) == "Hunters" then
-			ULib.tsayColor( v, false, team.GetColor(1), "[HUNTERS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(225,225,225), message )
+			ULib.tsayColor( v, false, team.GetColor(1), "[HUNTERS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(255,255,100), message )
 		else end
 	end
 	
@@ -18,7 +18,7 @@ function ulx.saytoprops( calling_ply, message  )
 	
 	for k,v in pairs( player.GetAll() ) do
 		if team.GetName(v:Team()) == "Props" then
-			ULib.tsayColor( v, false, team.GetColor(2), "[PROPS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(225,225,225), message )
+			ULib.tsayColor( v, false, team.GetColor(2), "[PROPS]: ", team.GetColor(calling_ply:Team()), calling_ply:Nick().. ": ", Color(255,255,100), message )
 		else end
 	end
 	
